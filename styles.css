@@ -133,6 +133,9 @@ td, th {
     header img {
       width: 100%;;
     }
+    footer img {
+        width: 100%;
+    }
     button,
 label,
 input
