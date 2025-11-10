@@ -26,6 +26,7 @@ body {
 
 }
 
+
 main, footer {
     width: 900px;
     justify-content: center; 
@@ -46,7 +47,7 @@ main, footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    font-size: 1.2em;
 }
 #mainMenu li {
     margin-top: 1em;
@@ -96,8 +97,9 @@ section#formulario {
     color: #ffdddd;
 }
 #contenedorTabla{
-    width: 100%;
+  
   margin-top: 1em;
+ 
   }
 table{
    
@@ -143,6 +145,9 @@ td, th {
     justify-content: center;
     align-items: center;
    }
+   #mainMenu {
+    text-align: center;
+   }
    main,footer {
     width: 100%;
    }
@@ -158,6 +163,7 @@ td, th {
 }
 div#contenedorTabla{
    overflow-x: auto;
+   width: 100%;
 }
     button,
 label,
