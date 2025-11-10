@@ -57,7 +57,7 @@ input:invalid {
 }
 
 input:invalid:required {
-  background-color:  rgb(219, 214, 141);
+  background-color:  rgb(219, 214, 141 , 0.5);
 }
 
 input:valid {
