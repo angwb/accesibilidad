@@ -57,7 +57,7 @@ input:invalid {
 }
 
 input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
+  background-color:  rgb(219, 214, 141);
 }
 
 input:valid {
