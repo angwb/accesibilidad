@@ -115,7 +115,7 @@ section#formulario {
  
   }
 table{
-   
+   margin: auto;
     border-collapse: collapse;
     border-radius: .35em;
     border: 2px solid #2596be;
@@ -199,6 +199,7 @@ input
  input#enviar{
     width: 10em;
     height: 2.5em;
+    text-align: center;
  }  
 label,
 input,button
