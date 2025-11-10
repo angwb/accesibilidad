@@ -17,7 +17,7 @@ body {
     background-color:white;
     background-size: cover;
     padding: 10px;
-     display:flex;
+    display:flex;
     flex-direction: column;
     row-gap: 1em;
   
@@ -85,6 +85,7 @@ section#formulario {
     background-color: rgb(216, 192, 155);
 }
 #volver{
+    display: block;
     margin:  1em;
 }
 #btn-confirmar {
@@ -95,8 +96,7 @@ section#formulario {
     color: #ffdddd;
 }
 #contenedorTabla{
-    
-overflow-x: auto;
+    width: 100%;
   margin-top: 1em;
   }
 table{
@@ -155,6 +155,9 @@ td, th {
     footer #segMenu {
    flex-direction: column;
    row-gap: 1em;
+}
+div#contenedorTabla{
+   overflow-x: auto;
 }
     button,
 label,
