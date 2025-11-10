@@ -196,7 +196,10 @@ input
     justify-content: center;
     align-items: center;
    }
-   
+ input#enviar{
+    width: 10em;
+    height: 2.5em;
+ }  
 label,
 input,button
     {
