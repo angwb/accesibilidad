@@ -52,17 +52,6 @@ main, footer {
 #mainMenu li {
     margin-top: 1em;
 }
-input:invalid {
-  border: 1px dashed red;
-}
-
-input:invalid:required {
-  background-image: linear-gradient(to right, pink, lightgreen);
-}
-
-input:valid {
-  border: 1px solid black;
-}
 /*
 #segMenu {
     display: flex;
@@ -106,8 +95,6 @@ section#formulario {
     background-color:rgba(37, 150, 190) ;
     border-radius: 0.5em;
     color: #ffdddd;
-    width: 10em;
-    height: 2.5em;
 }
 #contenedorTabla{
   
@@ -132,9 +119,13 @@ border-left-width: 2px;
 border-left-style: solid;
 border-left-color:#2596be;
 }
-form p {
-    margin-bottom: 1em;
-}
+/*
+th[scope="row"] {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+ 
+}*/
   
 td, th {
   border: 1px solid #2596be;
@@ -178,7 +169,7 @@ div#contenedorTabla{
 label,
 input
     {
-
+  display: block;
   font-family: inherit;
   font-size: 100%;
   margin: 0;
@@ -200,7 +191,7 @@ input
 label,
 input,button
     {
-
+  display: block;
   font-family: inherit;
   font-size: 100%;
   margin: 0;

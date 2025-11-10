@@ -7,21 +7,23 @@
     <title>Designaciones Region IV-Inscripcion</title>
 </head>
 <header>
-<img src="img/bannerTitulo.jpg"  aria-hidden="true" alt="Imagen con el texto departamento de designaciones region IV">
+<img src="img/bannerTitulo.jpg"  aria-hidden="true" alt="Imagen 
+con texto que describe el departamento de designaciones region IV">
 
 </header>
 <body>
     <h1>Inscripción para llamado N° 2205</h1>
     <div id="intro">
-    <p><u><b>Datos del llamado de la escuela:</u></b> 748 de Trelew </p>
-    <p><u><b> Horas:</u></b>03+03</p>
-    <p><u><b>Sit.Rev.:</b></u>"Suplente" Art. 5 C</p>
-    <p><u><b> Hora institucional:</b></u> 3° Sábado  de cada mes  de 8:00 a 12:00hs.</p>
-    <p><u><b> Observaciones:</b></u>-</p>
+    <p><u><strong>Datos del llamado de la escuela:</u></strong> 748 de Trelew </p>
+    <p><u><strong> Horas:</u></strong>03+03</p>
+    <p><u><strong>Sit.Rev.:</strong></u>"Suplente" Art. 5 C</p>
+    <p><u><strong> Hora institucional:</strong></u> 3° Sábado  de cada mes  de 8:00 a 12:00hs.</p>
+    <p><u><strong> Observaciones:</strong></u>-</p>
     </div>
+<main>    
 <div id="contenedorTabla">    
 <table>
-    <caption>Horarios</caption>
+    <caption>Horarios del llamado</caption>
     <thead>
         <tr>
             <th scope="col">Orden N°</th>
@@ -68,7 +70,7 @@
             
         </tr>
         <tr>
-            <th>4</th>
+            <th scope="row">4</th>
             <td>18:15 A 18:55</td>
             <td></td>
             <td>7º1º TGA</td>
@@ -77,7 +79,7 @@
           <td></td>
         </tr>
           <tr>
-            <th>5 </th>
+            <th scope="row">5 </th>
             <td>18:55 A 19:35</td>
             <td></td>
             <td>7º1º TGA</td>
@@ -86,7 +88,7 @@
           <td></td>
         </tr>
           <tr>
-            <th>6</th>
+            <th scope="row">6</th>
             <td>19:35 A 20:15</td>
             <td></td>
             <td>7º1º TGA</td>
@@ -98,13 +100,14 @@
    </tbody>
 </table>
 </div>
+</main>
 <div>
-<button id="volver"><a href="index.html">Volver</a></button>
+<button id="volver"><a href="index.html">Inicio</a></button>
 </div>
 <section id="Formulario">
 <form>
 
-    <h3>Formulario de inscripción</h3>
+    <h2>Formulario de inscripción</h2>
 <p>
     Los campos marcados con  
   <strong> <abbr title="required"> * </abbr> </strong>son obligatorios para inscribirse.
@@ -112,42 +115,42 @@
 
 <div>
 <label for="surname">
-  Apellido: <abbr title="required" aria-label="required">*</abbr></label>
-  <input type="text" id="apellido" name="U-apellido" />
-
+  Apellido: <abbr title="required" required aria-label="required">*</abbr>
+  <input type="text" id="apellido" name="U-apellido" tabindex="1"  placeholder="Perez"/>
+</label>
 </div>
 <div>
 <label for="name">
-  Nombre:<abbr title="required" aria-label="required">*</abbr></label>
-   <input type="text" id="nombre" name="U-nombre" />
-
+  Nombre:<abbr title="required" required aria-label="required">*</abbr>
+   <input type="text" id="nombre"  placeholder="Juan" name="U-nombre" tabindex="2" />
+</label>
 </div>
 <div>
 <label for="cuil">
-CUIL<abbr title="required" aria-label="required">*</abbr></label>
-<input type="tel" id="cuil" name="nro-cuil" max="10"/>
-
+CUIL<abbr title="required" required aria-label="required">*</abbr>
+<input type="tel" id="cuil" name="nro-cuil" max="10" tabindex="3" placeholder="20302548513"/>
+</label>
 </div>
 <div>
 <label for="telefono">
-Teléfono<abbr title="required" aria-label="required">*</abbr></label>
-<input type="tel" id="telefono" name="nro-telefono"/>
-
+Teléfono<abbr title="required" required aria-label="required">*</abbr>
+<input type="tel" id="telefono" name="nro-telefono" max="12"/ tabindex="4" placeholder="2804914518">
+</label>
 </div>
 <div>
 <label for="correoE">
-E-mail<abbr title="required" aria-label="required">*</abbr></label>
- <input type="email" id="email" name="email" />
-
+E-mail<abbr title="required" required aria-label="required">*</abbr>
+ <input type="email" id="email" name="email" tabindex="5" placeholder="juanperez@correo.com"/>
+</label>
 </div>
 <div>
 <label for="titulo">
-Título <input type="text" id="titulo" name="titulo"/></label>
-
+Título <input type="text" id="titulo" name="titulo" maxlength="40" tabindex="6" placeholder="Prof. de Lengua"/>
+</label>
 </div>
-<label for="Observaciones"></label>
-Observaciones <input type="text" id="observaciones" name="observaciones"/>
-
+<label for="Observaciones">
+Observaciones <input type="text" id="observaciones" name="observaciones" maxlength="80" tabindex="7"/>
+</label>
 </div>
 </form>
 <div id="aviso">
@@ -156,13 +159,14 @@ Observaciones <input type="text" id="observaciones" name="observaciones"/>
 </div>
 <div>
 <label for="confirmacion">
-Confirme que verificó los datos y son correctos:<abbr title="required" aria-label="required">*</abbr></label>
+Confirme que verificó los datos y son correctos:<abbr title="required" aria-label="required" >*</abbr></label>
 
 <input id="checkbox" name="checkbox" type="checkbox" />
 </div>
-<input id="btn-confirmar" type="button" value="Enviar inscripción" />
-
 </section>
+<input id="btn-confirmar" type="submit"  value="Enviar"/>
+
+
 </body>
 <footer>
 <img src="img/headerBanner.jpg"  aria-hidden="true" alt="Imagen donde se ve una mano subrayando un texto y el logo 
